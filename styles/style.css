@@ -1,1 +1,43 @@
+.vvp-item-tile {
+	position: relative;
+	margin: 0.5em;
+	border: 1px solid black;
+}
 
+.vineyard-content {
+	inset: 0;
+	position: absolute;
+	opacity: 0.8
+}
+
+.vineyard-flex {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.vineyard-label span {
+	display: block;
+}
+
+.vineyard-btns button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+	background-color: gray;
+	color: white;
+	border-radius: 6px;
+	border: 1px solid black;
+	margin: 0 0.2em;
+	font-size: 18px;
+}
+
+.vineyard-btns button.active {
+	background-color: green;
+}

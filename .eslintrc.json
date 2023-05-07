@@ -1,6 +1,7 @@
 {
 	"root": true,
 	"env": {
+		"es6": true,
 		"browser": true,
 		"webextensions": true
 	},
@@ -9,8 +10,7 @@
 		"plugin:json/recommended"
 	],
 	"parserOptions": {
-		"ecmaVersion": 2019,
-		"sourceType": "module"
+		"ecmaVersion": "latest"
 	},
 	"plugins": [
 		"json"

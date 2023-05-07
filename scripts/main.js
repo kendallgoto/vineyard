@@ -1,6 +1,6 @@
 function inject(file, tag) {
-	var node = document.getElementsByTagName(tag)[0];
-	var script = document.createElement('script');
+	const node = document.getElementsByTagName(tag)[0];
+	const script = document.createElement('script');
 	script.setAttribute('type', 'module');
 	script.setAttribute('src', file);
 	node.appendChild(script);
