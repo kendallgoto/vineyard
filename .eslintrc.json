@@ -1,0 +1,50 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"webextensions": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:json/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"json"
+	],
+	"rules": {
+		"indent": [
+			"error",
+			"tab",
+			{
+				"ignoreComments": true,
+				"SwitchCase": 1
+			}
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"no-async-promise-executor": "off",
+		"no-console": "off",
+		"no-unused-vars": "off",
+		"no-useless-escape": "off",
+		"prefer-const": "error",
+		"require-atomic-updates": "off",
+		"no-var": "error",
+		"keyword-spacing": [
+			"error",
+			{
+				"before": true,
+				"after": true
+			}
+		]
+	}
+}

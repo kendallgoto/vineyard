@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "Vineyard",
+	"description": "Helper Extension for Amazon Vine",
+	"version": "1.0",
+	"action": {
+		"default_popup": "hello.html",
+		"default_icon": "hello_extensions.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"scripts/vineyard.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			]
+		}
+	],
+	"content_scripts": [
+		{
+			"js": [
+				"scripts/main.js"
+			],
+			"css": [
+				"styles/style.css"
+			],
+			"matches": [
+				"https://www.amazon.com/vine/*"
+			]
+		}
+	]
+}
